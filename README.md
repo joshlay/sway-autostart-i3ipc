@@ -9,13 +9,6 @@ Required i3/Sway config line:
     exec path/to/startup.py
 ```
 
-Work days may be temporarily disabled by creating and removing
-`~/.vacation` when appropriate.
-
-The config may be chosen with `-c path/to/autostart.yml`.
-
-The default is `XDG_CONFIG_HOME/autostart-i3ipc.yml` _(typically in ~/.config)_
-
 ## Config sample
 
 ```yaml
@@ -23,6 +16,13 @@ The default is `XDG_CONFIG_HOME/autostart-i3ipc.yml` _(typically in ~/.config)_
 autostarts:
   pre: []  # blocking tasks that run every day, before any other section. intended for backups/updates
   common: []  # non-blocking tasks that run every day
-  weekend: []  # blocking tasks for weekends, after 'pre' but before 'common'
+  weekend: []  # blocking tasks for Saturday/Sunday, after 'pre' but before 'common'
   work: []  # non-blocking tasks run if Monday through Friday between 8AM - 4PM
 ```
+
+The config may be chosen with `-c path/to/autostart.yml`.
+
+The default is `XDG_CONFIG_HOME/autostart-i3ipc.yml` _(typically in ~/.config)_
+
+Work day autostarts may be temporarily disabled by creating `~/.vacation`.
+When desired again, remove the file.
