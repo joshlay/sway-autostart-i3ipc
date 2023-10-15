@@ -6,7 +6,7 @@ Will conditionally exec other things defined in a YML dict.
 Required i3/Sway config line:
 
 ```bash
-    exec path/to/startup.py
+exec path/to/startup.py
 ```
 
 ## Config sample
