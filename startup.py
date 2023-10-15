@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# pylint: disable=line-too-long
 """
 A smart but also lazy login autostart manager for i3/Sway.
 
