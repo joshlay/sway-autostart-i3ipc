@@ -11,17 +11,16 @@ exec path/to/startup.py
 
 ## Requirements
 
-### Fedora
+### Fedora / EL
 
 ```bash
 sudo dnf -yq install python3-{i3ipc,pyxdg,pyyaml,systemd}
 ```
 
-### Generic / pip
+### Debian / Ubuntu
 
 ```bash
-git clone git@github.com:joshlay/sway-autostart-i3ipc.git
-pip3 install --user -r requirements.txt
+sudo apt install python3-{i3ipc,systemd,xdg,yaml}
 ```
 
 ## Config sample
