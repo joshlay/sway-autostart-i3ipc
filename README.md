@@ -1,24 +1,18 @@
 # sway-autostart-i3ipc
 
 A smart but also lazy login autostart manager for i3/Sway.
-
 Will conditionally exec other things defined in a YML dict.
-ie: every day, work days, or weekends
 
 Required i3/Sway config line:
 
 ```bash
-    exec .config/sway/scripts/startup.py
+    exec path/to/startup.py
 ```
 
-Assuming a copy of this script is placed in a newly-made directory, `~/.config/sway/scripts/`
+Work days may be temporarily disabled by creating and removing
+`~/.vacation` when appropriate.
 
-## Options
-
-```bash
-  -c CONFIG, --config CONFIG
-                        Path to the YML configuration file. (default: /home/user/.config/sway/autostart.yml)
-```
+The config YML may be chosen with `-c path/to/autostart.yml`
 
 ## Config sample
 
