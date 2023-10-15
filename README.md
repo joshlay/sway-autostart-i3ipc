@@ -9,6 +9,21 @@ Required i3/Sway config line:
 exec path/to/startup.py
 ```
 
+## Requirements
+
+### Fedora
+
+```bash
+sudo dnf -yq install python3-{i3ipc,pyxdg,pyyaml,systemd}
+```
+
+### Generic / pip
+
+```bash
+git clone git@github.com:joshlay/sway-autostart-i3ipc.git
+pip3 install --user -r requirements.txt
+```
+
 ## Config sample
 
 ```yaml
