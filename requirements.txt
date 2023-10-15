@@ -1,0 +1,4 @@
+i3ipc
+xdg
+systemd-python
+PyYAML
