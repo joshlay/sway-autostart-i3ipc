@@ -1,4 +1,4 @@
-# autostart-i3ipc
+# sway-autostart-i3ipc
 
 A smart but also lazy login autostart manager for i3/Sway.
 
