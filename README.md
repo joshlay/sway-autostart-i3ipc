@@ -6,7 +6,9 @@ Will conditionally exec other things defined in a YML dict.
 ie: every day, work days, or weekends
 
 Required i3/Sway config line:
+```bash
     exec .config/sway/scripts/startup.py
+```
 
 ## Config sample
 
@@ -21,7 +23,7 @@ autostarts:
 
 ### Options
 
-```shell
+```bash
   -c CONFIG, --config CONFIG
                         Path to the YML configuration file. (default: /home/user/.config/sway/autostart.yml)
 ```
