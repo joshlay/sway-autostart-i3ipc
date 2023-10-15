@@ -85,7 +85,7 @@ def parse_args():
     )
 
     # Default path for the config
-    default_config = os.path.join(XDG_CONFIG_HOME, "sway", "autostart.yml")
+    default_config = os.path.join(XDG_CONFIG_HOME, "autostart-i3ipc.yml")
 
     parser.add_argument(
         "-c",

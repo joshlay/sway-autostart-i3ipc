@@ -13,7 +13,7 @@ Work days may be temporarily disabled by creating and removing
 `~/.vacation` when appropriate.
 
 The config may be chosen with `-c path/to/autostart.yml`.
-Default is `$XDG_CONFIG_HOME/sway/autostart.yml`.
+Default config is `XDG_CONFIG_HOME/autostart-i3ipc.yml` _(typically in ~/.config)_
 
 ## Config sample
 
