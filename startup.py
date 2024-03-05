@@ -27,7 +27,7 @@ from textwrap import dedent
 from systemd import journal
 import yaml.loader
 from i3ipc import Connection
-from xdg import XDG_CONFIG_HOME  # pylint: disable=no-name-in-module
+from xdg import BaseDirectory
 
 
 def log_message(
@@ -86,7 +86,7 @@ def parse_args():
     )
 
     # Default path for the config
-    default_config = os.path.join(XDG_CONFIG_HOME, "autostart-i3ipc.yml")
+    default_config = os.path.join(BaseDirectory.xdg_config_home, "autostart-i3ipc.yml")
 
     parser.add_argument(
         "-c",
